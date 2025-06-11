@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+
+    <title>Joyin</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <style>
+      #mainNav {
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+        padding: 1rem 0;
+      }
+
+      /* 滑動後加上這個 class */
+      .navbar-scrolled {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85); /* 黑色半透明 */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 加一點陰影 */
+        z-index: 1000;
+      }
+    </style>
+  </head>
+
+  <body lang="zh-Hant">
+    <!-- 輪播區塊開始 -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- 第一張輪播內容 -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- 左側文字 -->
+              <div class="col-md-6 text-center text-md-start">
+                <h2 class="fw-bold">
+                  一站式會員專屬<br /><span class="text-danger">優惠平台</span>
+                </h2>
+                <p>快速導入、多元整合、高效互動</p>
+              </div>
+              <!-- 右側圖片 -->
+              <div class="col-md-6">
+                <img
+                  src="../img/banner01.png"
+                  class="img-fluid"
+                  alt="優惠平台圖片"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二張輪播內容（可複製這區塊） -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                <h2 class="fw-bold">
+                  會員互動行銷<br /><span class="text-danger">專屬任務</span>
+                </h2>
+                <p>提升參與、加強黏著、精準獎勵</p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="第二張圖片.jpg"
+                  class="img-fluid"
+                  alt="互動任務圖片"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 輪播左右箭頭 -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("mainNav");
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+
+    <script src="js/Jquery.min.js"></script>
+    <script src="js/Bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

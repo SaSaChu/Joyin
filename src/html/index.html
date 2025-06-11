@@ -3,50 +3,131 @@
   <head>
     <meta http-equiv="Content-Language" content="zh-tw" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
-    
-    <title>Lalilo</title>  
-    <link rel="stylesheet" href="css/index.css">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+
+    <title>Joyin</title>
+
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/public.js"
+    ></script>
   </head>
+
   <body lang="zh-Hant">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="cent01">
+      <!-- header -->
+      <header class="fixed-top">
+        <div class="row py-3">
+          <div class="col-3 text-start">
+            <a href="index.html"><img src="../img/logo.svg" /></a>
+          </div>
+          <div class="col-9">
+            <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav active" href="#">首頁</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav" href="#">優惠券平台</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav" href="#">周邊好康</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav" href="#">任務遊戲</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav" href="#">關於我們</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link custom-nav" href="#">聯絡我們</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </header>
+
+      <!-- 輪播區塊開始 -->
+      <div
+        id="mainCarousel"
+        class="carousel slide pb-5 mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- 第一張輪播內容 -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row align-items-center">
+                <!-- 左側文字 -->
+                <div class="col-md-6 text-center text-md-start">
+                  <h2 class="fw-bold">
+                    一站式會員專屬<br /><span class="text-danger"
+                      >優惠平台</span
+                    >
+                  </h2>
+                  <p>快速導入、多元整合、高效互動</p>
+                </div>
+                <!-- 右側圖片 -->
+                <div class="col-md-6">
+                  <img
+                    src="../img/banner01.png"
+                    class="img-fluid"
+                    alt="優惠平台圖片"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第二張輪播內容（可複製這區塊） -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                  <h2 class="fw-bold">
+                    會員互動行銷<br /><span class="text-danger">專屬任務</span>
+                  </h2>
+                  <p>提升參與、加強黏著、精準獎勵</p>
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="../img/banner01.png"
+                    class="img-fluid"
+                    alt="互動任務圖片"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
+
+        <!-- 輪播左右箭頭 -->
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button> -->
       </div>
     </div>
+
+    <p style="height: 1000px"></p>
 
     <script src="js/Jquery.min.js"></script>
     <script src="js/Bootstrap.bundle.min.js"></script>

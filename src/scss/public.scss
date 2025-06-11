@@ -1,0 +1,105 @@
+@use "sass:math";
+@import "_/_Lib";
+@import "_/Core";
+@import "Lalilo";
+@import "_/Bootstrap";
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0 0 0 0;
+  color: rgba(90, 90, 90, 1);
+
+  font-size: 16px;
+  text-align: center;
+  font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue",
+    Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:after,
+  &:before {
+    color: black;
+    vertical-align: middle !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  outline: non !important;
+  border-width: 0;
+}
+
+header {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* 半透明黑色 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// menu
+/* 基本樣式 */
+.custom-nav {
+  position: relative;
+  color: #000;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+
+  /* 滑鼠滑過去：變紅字 */
+  &:hover {
+    color: #d60000 !important;
+
+    /* 滑鼠滑過去時，線條長出來 */
+    &:after {
+      width: 100%;
+    }
+  }
+
+  /* 下方線條 */
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #d60000;
+    transition: width 0.4s ease;
+  }
+}
+
+/* 如果是 active 頁籤就直接顯示紅線與紅字 */
+.custom-nav {
+  &.active {
+    color: #d60000 !important;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+// boostratp
+
+// other

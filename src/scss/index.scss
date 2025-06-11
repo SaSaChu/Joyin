@@ -1,10 +1,3 @@
-/**
- * @author      OA Wu <oawu.tw@gmail.com>
- * @copyright   Copyright (c) 2015 - 2024, Lalilo
- * @license     http://opensource.org/licenses/MIT  MIT License
- * @link        https://www.ioa.tw/
- */
-
 @use "sass:math";
 @import "_/_Lib";
 @import "_/Core";
@@ -12,5 +5,52 @@
 @import "_/Bootstrap";
 
 body {
-  background-color: #f0f0f0;
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0 0 0 0;
+  color: rgba(90, 90, 90, 1);
+
+  font-size: 16px;
+  text-align: center;
+  font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue",
+    Helvetica, Arial, sans-serif;
+}
+
+.cent01 {
+  position: relative;
+  margin: 0;
+  padding: 80px 0 0 0;
+  overflow-x: hidden;
+
+  /* 右上角 - 淺米色色塊 */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px; /* 可依畫面大小調整 */
+    height: 450px; /* 高度依設計調整 */
+    background-color: #f7f3ed; /* 淺米色 */
+    z-index: 0;
+  }
+
+  /* 右下角 - 深灰色色塊 */
+  &:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 620px;
+    background-color: #2d292c; /* 深灰色 */
+    z-index: 0;
+  }
+}
+
+#mainCarousel {
+  z-index: 1;
 }
