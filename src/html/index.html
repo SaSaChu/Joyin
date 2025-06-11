@@ -10,8 +10,10 @@
 
     <title>Joyin</title>
 
-    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       language="javascript"
       type="text/javascript"
@@ -22,32 +24,34 @@
   <body lang="zh-Hant">
     <div class="cent01">
       <!-- header -->
-      <header class="fixed-top">
-        <div class="row py-3">
-          <div class="col-3 text-start">
-            <a href="index.html"><img src="../img/logo.svg" /></a>
-          </div>
-          <div class="col-9">
-            <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav active" href="#">首頁</a>
-              </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav" href="#">優惠券平台</a>
-              </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav" href="#">周邊好康</a>
-              </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav" href="#">任務遊戲</a>
-              </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav" href="#">關於我們</a>
-              </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link custom-nav" href="#">聯絡我們</a>
-              </li>
-            </ul>
+      <header>
+        <div class="max-1140">
+          <div class="row py-3">
+            <div class="col-3 text-start">
+              <a href="index.html"><img src="../img/logo.svg" /></a>
+            </div>
+            <div class="col-9">
+              <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav active" href="#">首頁</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav" href="#">優惠券平台</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav" href="#">周邊好康</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav" href="#">任務遊戲</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav" href="#">關於我們</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link custom-nav" href="#">聯絡我們</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -128,8 +132,142 @@
 
     <p style="height: 1000px"></p>
 
+    <section class="contact-section d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="contact-form text-white">
+              <small class="text-uppercase">Contact Us</small>
+              <h2 class="fw-bold mt-2 mb-4">
+                讓我們幫助您的<br />數位業務發展
+              </h2>
+              <form id="contactForm">
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="姓名 *"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="電話或Email *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司名稱"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司職務"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="聯絡事項"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input type="file" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-danger px-4 py-2">
+                  確定送出
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="footer-logo d-flex align-items-center">
+              <img
+                src="../img/logo.svg"
+                alt="JOYin logo"
+                class="me-2"
+                style="height: 48px"
+              />
+            </div>
+            <p class="mt-3">我們一起開創數位的未來<br />歡迎諮詢</p>
+            <div class="footer-social mt-3 d-flex gap-3">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <ul class="list-unstyled">
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">關於我們</a></li>
+              <li><a href="#">優惠券平台</a></li>
+              <li><a href="#">周邊好康</a></li>
+              <li><a href="#">任務遊戲</a></li>
+            </ul>
+            <ul class="list-unstyled mt-4">
+              <li><a href="#">隱私條款</a></li>
+              <li><a href="#">服務條款</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>聯絡我們</h6>
+            <p><i class="bi bi-telephone-fill me-2"></i>+886-937-773-381</p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i
+              ><a href="mailto:eva.chen@systex.com">eva.chen@systex.com</a>
+            </p>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i
+              >公司總部：114台北市內湖區瑞光路318號
+            </p>
+            <p class="ms-4">好康多據點：235台灣中和區連城路168-2號6樓</p>
+            <p>
+              <i class="bi bi-clock-fill me-2"></i>週一至週五：9:00 AM – 6:00
+              PM<br />週六、週日及國定假日休息
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center small mt-3">
+          Joyin © 2025. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
     <script src="js/Jquery.min.js"></script>
     <script src="js/Bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+      $(function () {
+        $(window).on("scroll", function () {
+          if ($(this).scrollTop() > 50) {
+            $("header").addClass("scrolled");
+          } else {
+            $("header").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
