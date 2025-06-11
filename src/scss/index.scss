@@ -1,24 +1,7 @@
 @use "sass:math";
 @import "_/_Lib";
-@import "_/Core";
 @import "Lalilo";
 @import "_/Bootstrap";
-
-body {
-  position: relative;
-
-  display: inline-block;
-  width: 100%;
-
-  margin: 0;
-  padding: 0 0 0 0;
-  color: rgba(90, 90, 90, 1);
-
-  font-size: 16px;
-  text-align: center;
-  font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue",
-    Helvetica, Arial, sans-serif;
-}
 
 .cent01 {
   position: relative;
