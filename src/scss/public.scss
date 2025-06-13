@@ -395,13 +395,70 @@ header {
   }
 }
 
+// 標題文字
+.section-title-block {
+  position: relative;
+
+  .bg-number {
+    font-size: 200px;
+    font-weight: 700;
+    color: #f7f5f0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 0;
+    white-space: nowrap;
+    pointer-events: none;
+
+    &.bg-number-left {
+      left: 20%;
+    }
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    color: #444;
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+    color: #2d2d2d;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .bg-number {
+      font-size: 120px;
+    }
+
+    .main-title {
+      font-size: 1.5rem;
+    }
+
+    .sub-title {
+      font-size: 1rem;
+    }
+  }
+}
+
 // other
-.max-1140 {
-  max-width: 1140px;
+.max-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.max-1310 {
+  max-width: 1310px;
   margin: 0 auto;
 }
 .ps-32 {
   padding-left: 32px;
+}
+.color-gray2 {
+  color: #949494;
 }
 
 // font

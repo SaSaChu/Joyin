@@ -13,13 +13,13 @@ $mainred: #e50113; // 主紅色
   background-color: #fff;
   position: relative;
 
-  .max-1140 {
-    max-width: 1140px;
+  .max-1440 {
+    max-width: 1440px;
     margin: 0 auto;
   }
 
   .underlay-bar {
-    height: 350px;
+    height: 390px;
     background-color: $maincolor;
 
     @include media-breakpoint-down(md) {
@@ -92,6 +92,7 @@ $mainred: #e50113; // 主紅色
   }
 }
 
+// contact page - text
 .contact-desc {
   border-left: 4px solid #d00; // 紅色垂直線
   padding-left: 1rem;
@@ -103,7 +104,7 @@ $mainred: #e50113; // 主紅色
     line-height: 1.7;
   }
 }
-// 地圖
+// contact page - 地圖
 .map-contact-section {
   .map-embed {
     position: relative;
