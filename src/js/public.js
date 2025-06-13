@@ -1,4 +1,28 @@
 $(document).ready(function () {
+  $(".open-map-btn").on("click", function () {
+    window.open(
+      "https://maps.google.com?q=235+台灣中和區連城路168-2號6樓",
+      "_blank"
+    );
+  });
+});
+
+$(document).ready(function () {
+  $('a[href^="#"]').on("click", function (e) {
+    const target = $($(this).attr("href"));
+    if (target.length) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top - 80, // 若有 header 高度，微調一下
+        },
+        600
+      );
+    }
+  });
+});
+
+$(document).ready(function () {
   // top menu
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 50) {

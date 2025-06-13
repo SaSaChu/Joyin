@@ -1,0 +1,170 @@
+@use "sass:math";
+@import "_/_Lib";
+@import "Lalilo";
+@import "_/Bootstrap";
+
+// 變數定義
+$maincolor: #f7f3ed; // 淺米色
+$mainblack: #393636; // 主黑色
+$mainred: #e50113; // 主紅色
+
+// contact page
+.contact-image-section {
+  background-color: #fff;
+  position: relative;
+
+  .max-1140 {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .underlay-bar {
+    height: 350px;
+    background-color: $maincolor;
+
+    @include media-breakpoint-down(md) {
+      height: 150px;
+    }
+  }
+
+  .translate-middle-y {
+    transform: translateY(50%);
+  }
+
+  .image-wrapper {
+    position: relative;
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 2rem 3rem;
+      width: 100%;
+      max-width: 60%;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4) 60%,
+        transparent
+      );
+
+      @include media-breakpoint-down(md) {
+        max-width: 85%;
+        padding: 1rem;
+      }
+    }
+
+    .content-wrapper {
+      max-width: 100%;
+    }
+
+    .btn-danger {
+      background-color: #e4002b;
+      border-color: #e4002b;
+
+      &:hover {
+        background-color: #c70025;
+        border-color: #c70025;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .overlay-text {
+      position: static;
+      background: rgba(0, 0, 0, 0.6);
+      max-width: 100%;
+
+      .f48 {
+        font-size: 1.4rem;
+      }
+
+      .btn-danger {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.contact-desc {
+  border-left: 4px solid #d00; // 紅色垂直線
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+
+  p {
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+  }
+}
+// 地圖
+.map-contact-section {
+  .map-embed {
+    position: relative;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 600px;
+      position: relative;
+      z-index: 1;
+    }
+
+    // 描邊效果：僅右邊 & 右下角
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+      width: 60%;
+      height: 15px;
+      background-color: #333;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      width: 15px;
+      height: 50%;
+      background-color: #333;
+      z-index: 2;
+    }
+  }
+
+  .open-map-btn {
+    position: absolute;
+    top: -10px; // 微微超出地圖上邊
+    left: -10px; // 微微超出地圖左邊
+    background-color: #ffc107;
+    border-radius: 0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    text-align: center;
+    z-index: 3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .open-map-btn {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+      top: 0;
+      left: 0;
+    }
+
+    .map-embed::after,
+    .map-embed::before {
+      display: none;
+    }
+  }
+}

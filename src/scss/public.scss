@@ -104,6 +104,52 @@ header {
   }
 }
 
+.offcanvas {
+  width: 260px;
+
+  &.offcanvas-end {
+    width: 80vw !important; // 寬度為視窗的一半
+  }
+
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      color: $mainred;
+      border-bottom: 1px solid $mainred;
+    }
+  }
+}
+
+.social-icons {
+  a.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #333;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $mainred;
+      border: 1px solid $mainred;
+      color: #fff;
+    }
+
+    i {
+      pointer-events: none;
+    }
+  }
+}
+
 // footer
 .footer-section {
   background-color: $maincolor;
@@ -151,6 +197,10 @@ header {
   .footer-ul {
     list-style: none;
 
+    @include media-breakpoint-down(md) {
+      padding-left: 15px;
+    }
+
     > li {
       font-size: 1.1rem;
       font-weight: 400;
@@ -175,21 +225,69 @@ header {
 }
 
 // 聯絡我們表單
+@include media-breakpoint-down(md) {
+  .contact-section {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    form {
+      .row {
+        flex-direction: column;
+
+        .col {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .form-control,
+      .form-select {
+        font-size: 0.95rem;
+      }
+
+      .custom-file-wrapper {
+        flex-direction: row;
+
+        .upload-btn {
+          margin-left: 0;
+          margin-top: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
 .contact-section {
   background: url("../img/contact-bg.png") no-repeat left center;
   background-size: cover;
   min-height: 650px;
+
+  @include media-breakpoint-down(md) {
+    background: url("../img/contact-bg.png") no-repeat left top;
+  }
 
   .contact-form {
     padding: 3rem;
     border-radius: 8px;
     background-color: transparent;
 
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+
     .custom-file-wrapper {
       border-bottom: 1px solid #fff;
       display: flex;
 
       .fake-input {
+        @include media-breakpoint-down(md) {
+          width: 80%;
+        }
         flex: 1;
         background: transparent;
         border: none;
@@ -302,24 +400,48 @@ header {
   max-width: 1140px;
   margin: 0 auto;
 }
-
 .ps-32 {
   padding-left: 32px;
 }
 
 // font
+.f13 {
+  font-size: 0.8rem;
+}
 .f18 {
   font-size: 1.1rem;
   font-weight: 400;
 }
+.f20 {
+  font-size: 1.25rem;
+}
 .f36 {
   font-size: 2rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 }
 .f30 {
   font-size: 3rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+}
+.f48 {
+  font-size: 2.6rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
+  }
 }
 .f70 {
   font-size: 4rem;
+  @include media-breakpoint-down(md) {
+    font-size: 2.6rem;
+  }
 }
 
 // boostratp
