@@ -10,8 +10,20 @@
 
     <title>Joyin</title>
 
-    <link rel="stylesheet" href="css/public.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/public.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
@@ -28,7 +40,7 @@
         <div class="max-1140">
           <div class="row py-3">
             <div class="col-3 text-start">
-              <a href="index.html"><img src="../img/logo.svg" /></a>
+              <a href="index.html"><img src="img/logo.svg" /></a>
             </div>
             <div class="col-9">
               <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
@@ -69,17 +81,17 @@
               <div class="row align-items-center">
                 <!-- 左側文字 -->
                 <div class="col-md-6 text-center text-md-start">
-                  <h2 class="fw-bold">
-                    一站式會員專屬<br /><span class="text-danger"
-                      >優惠平台</span
+                  <p class="f70 fw-bold lh-sm">
+                    一站式會員專屬<br />
+                    <span class="text-danger">優惠平台</span
                     >
-                  </h2>
-                  <p>快速導入、多元整合、高效互動</p>
+                  </p>
+                  <p class="f36 fw-light">快速導入、多元整合、高效互動</p>
                 </div>
                 <!-- 右側圖片 -->
                 <div class="col-md-6">
                   <img
-                    src="../img/banner01.png"
+                    src="img/banner01.png"
                     class="img-fluid"
                     alt="優惠平台圖片"
                   />
@@ -93,14 +105,16 @@
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                  <h2 class="fw-bold">
-                    會員互動行銷<br /><span class="text-danger">專屬任務</span>
-                  </h2>
-                  <p>提升參與、加強黏著、精準獎勵</p>
+                  <p class="f70 fw-bold lh-sm">
+                    一站式會員專屬<br />
+                    <span class="text-danger">優惠平台</span
+                    >
+                  </p>
+                  <p class="f36 fw-light">快速導入、多元整合、高效互動</p>
                 </div>
                 <div class="col-md-6">
                   <img
-                    src="../img/banner01.png"
+                    src="img/banner01.png"
                     class="img-fluid"
                     alt="互動任務圖片"
                   />
@@ -134,13 +148,13 @@
 
     <section class="contact-section d-flex align-items-center">
       <div class="container">
-        <div class="row justify-content-end">
+        <div class="row justify-content-end text-start">
           <div class="col-lg-6">
             <div class="contact-form text-white">
               <small class="text-uppercase">Contact Us</small>
-              <h2 class="fw-bold mt-2 mb-4">
+              <p class="f30 fw-bold mt-2 mb-4">
                 讓我們幫助您的<br />數位業務發展
-              </h2>
+              </p>
               <form id="contactForm">
                 <div class="row mb-3">
                   <div class="col">
@@ -176,15 +190,23 @@
                     />
                   </div>
                 </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="聯絡事項"
-                  />
+                <div class="mb-3 position-relative">
+                  <select class="form-select custom-select" required>
+                    <option value="" disabled selected>聯絡事項</option>
+                    <option value="合作提案">合作提案</option>
+                    <option value="產品諮詢">產品諮詢</option>
+                    <option value="售後服務">售後服務</option>
+                    <option value="其他">其他</option>
+                  </select>
                 </div>
-                <div class="mb-3">
-                  <input type="file" class="form-control" />
+                <div class="mb-3 position-relative">
+                  <div class="custom-file-wrapper d-flex align-items-center">
+                    <input type="text" class="form-control fake-input" placeholder="上傳檔案" readonly />
+                    <label class="upload-btn">
+                      檔案
+                      <input type="file" class="real-input" />
+                    </label>
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-danger px-4 py-2">
                   確定送出
@@ -199,51 +221,68 @@
     <footer class="footer-section py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0">
+          <div class="col-4 mb-4 mb-md-0">
             <div class="footer-logo d-flex align-items-center">
               <img
-                src="../img/logo.svg"
+                src="img/logo.svg"
                 alt="JOYin logo"
                 class="me-2"
                 style="height: 48px"
               />
             </div>
-            <p class="mt-3">我們一起開創數位的未來<br />歡迎諮詢</p>
-            <div class="footer-social mt-3 d-flex gap-3">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
+            <p class="fs-5 text-start mt-3">
+              我們一起開創數位的未來<br />歡迎諮詢
+            </p>
+            <div class="footer-social-icons d-flex gap-4 mt-3">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <ul class="list-unstyled">
+          <div class="col-2 mb-4 mb-md-0 text-start">
+            <ul class="footer-ul">
               <li><a href="#">首頁</a></li>
               <li><a href="#">關於我們</a></li>
               <li><a href="#">優惠券平台</a></li>
               <li><a href="#">周邊好康</a></li>
               <li><a href="#">任務遊戲</a></li>
             </ul>
-            <ul class="list-unstyled mt-4">
+          </div>
+          <div class="col-2 mb-4 mb-md-0 text-start">
+            <ul class="footer-ul">
               <li><a href="#">隱私條款</a></li>
               <li><a href="#">服務條款</a></li>
               <li><a href="#">常見問題</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <h6>聯絡我們</h6>
-            <p><i class="bi bi-telephone-fill me-2"></i>+886-937-773-381</p>
+          <div class="col-4 text-start">
+            <p class="f18">聯絡我們</p>
+
             <p>
-              <i class="bi bi-envelope-fill me-2"></i
-              ><a href="mailto:eva.chen@systex.com">eva.chen@systex.com</a>
+              <img class="me-2" src="img/icon-phone.svg" />
+              +886-937-773-381
             </p>
             <p>
-              <i class="bi bi-geo-alt-fill me-2"></i
-              >公司總部：114台北市內湖區瑞光路318號
+              <img class="me-2" src="img/icon-mail.svg" />
+              <a href="mailto:eva.chen@systex.com">eva.chen@systex.com </a>
             </p>
-            <p class="ms-4">好康多據點：235台灣中和區連城路168-2號6樓</p>
-            <p>
-              <i class="bi bi-clock-fill me-2"></i>週一至週五：9:00 AM – 6:00
-              PM<br />週六、週日及國定假日休息
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-plant.svg" />
+              <b>公司總部：</b>114台北市內湖區瑞光路318號
+            </p>
+            <p class="ps-32">
+              <b>好康多據點：</b>235台灣中和區連城路168-2號6樓
+            </p>
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-clock.svg" />
+              <b></b>週一至週五：</b>9:00 AM – 6:00 PM<br />
+            </p>
+            <p class="ps-32">
+              <b>週六、週日及國定假日休息</b>
             </p>
           </div>
         </div>
@@ -257,17 +296,5 @@
     <script src="js/Jquery.min.js"></script>
     <script src="js/Bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-
-    <script>
-      $(function () {
-        $(window).on("scroll", function () {
-          if ($(this).scrollTop() > 50) {
-            $("header").addClass("scrolled");
-          } else {
-            $("header").removeClass("scrolled");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
