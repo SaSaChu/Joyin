@@ -8,6 +8,23 @@ $maincolor: #f7f3ed; // 淺米色
 $mainblack: #393636; // 主黑色
 $mainred: #e50113; // 主紅色
 
+.apiboxs {
+  display: inline-block;
+  background-color: $gray-200;
+  width: 100%;
+  height: 800px;
+
+  p {
+    display: flex;
+    align-items: center;     /* 垂直置中 */
+    justify-content: center; /* 水平置中（可選） */
+    height: 100%; 
+    color: $gray-700;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+}
+
 // contact page
 .contact-image-section {
   background-color: #fff;
@@ -385,8 +402,8 @@ $beige: #f8f6f1;
 .red-line {
   display: inline-block;
   width: 4px;
-  height: 20px;
-  background: red;
+  height: 35px;
+  background: $mainred;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -396,7 +413,6 @@ $beige: #f8f6f1;
   height: 56px;
   border-radius: 50%;
   border: 2px solid #aaa;
-  background: #fff;
   font-size: 2rem;
   color: #444;
   transition: border 0.2s, color 0.2s, background 0.2s;
@@ -409,7 +425,6 @@ $beige: #f8f6f1;
   &:focus {
     border-color: $mainred;
     color: $mainred;
-    background: white;
   }
   @media (max-width: 767px) {
     width: 44px;
@@ -479,4 +494,206 @@ $beige: #f8f6f1;
     font-size: 16px;
   }
 }
+
+
+// arround
+
+// 最外層區塊：隱藏水平捲軸
+.recommend-section {
+  overflow-x: hidden;
+  padding: 2.5rem 0;
+  background-color: #fff; // 如有背景色，可自行修改
+}
+
+// Bootstrap 容器最大寬度
+.custom-container {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+// 區塊編號、標題文字
+.section-number {
+  font-size: 100px;
+  font-weight: 700;
+  color: #f2f2f2;
+  line-height: 1;
+  position: relative;
+}
+.section-subtitle {
+  font-size: 14px;
+  color: #888;
+  position: relative;
+  top: -40px;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: -20px;
+}
+.section-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+// 導航按鈕樣式
+.recommendation-prev-btn,
+.recommendation-next-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+.recommendation-prev-btn:hover,
+.recommendation-next-btn:hover {
+  background-color: #f0f0f0;
+}
+.recommendation-prev-btn i,
+.recommendation-next-btn i {
+  font-size: 16px;
+}
+
+// Swiper 容器可見範圍擴展
+.recommendation-swiper {
+  overflow: visible !important;
+  padding-bottom: 1rem;
+  .swiper-wrapper {
+    overflow: visible !important;
+  }
+}
+
+// Slide 內容與圖片樣式
+.recommendation-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.recommendation-swiper .swiper-slide img {
+  width: 100%;    // 充滿 slide 的寬度
+  height: auto;   // 等比例縮放
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+// 手機版 & 平板 (<992px) 調整
+@media (max-width: 991.98px) {
+  // 去掉任何額外的 padding-left
+  .recommendation-swiper .swiper-wrapper {
+    padding-left: 0 !important;
+  }
+
+  // 調整區塊編號、標題大小
+  .section-number {
+    font-size: 60px;
+  }
+  .section-subtitle {
+    top: -25px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  // 導航按鈕尺寸
+  .recommendation-prev-btn,
+  .recommendation-next-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+// Block: api-settings
+.custom-settings {
+  // … 其餘區塊略 …
+
+  &__images {
+    position: relative;
+    min-height: 360px;
+
+    // 上方紅線
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      right: 0;
+      width: 36%;
+      height: 8px;         // 線的粗細
+      background-color: #e50113;
+      z-index: 1;
+    }
+
+    // 右方紅線
+    &::after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      width: 8px;
+      height: 100%;        // 滿高
+      background-color: #e50113;
+      z-index: 1;
+    }
+
+    // 共用圖片樣式
+    .custom-settings__image {
+      display: block;
+      object-fit: cover;
+    }
+
+    // 大圖：靠右
+    & .custom-settings__image--large {
+      position: relative;
+      z-index: 2;
+      width: 520px;
+      height: 340px;
+      margin-left: auto;     
+    }
+
+    // 小圖：左下覆蓋
+    & .custom-settings__image--small {
+      position: absolute;
+      bottom: -50%;
+      left: 0;
+      z-index: 3;
+      width: 260px;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // RWD (<992px)
+  @media (max-width: 991.98px) {
+    &__images {
+      // 隱藏桌機紅線
+      &::before,
+      &::after {
+        display: none;
+      }
+      // 改為直列顯示
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .custom-settings__image--large,
+      & .custom-settings__image--small {
+        position: static !important;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
