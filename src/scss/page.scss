@@ -392,17 +392,33 @@ $beige: #f8f6f1;
 }
 
 .case-arrow {
-  background: #fff;
-  border: 2px solid #000;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  color: #000;
-  position: static !important;
+  border: 2px solid #aaa;
+  background: #fff;
+  font-size: 2rem;
+  color: #444;
+  transition: border 0.2s, color 0.2s, background 0.2s;
 
-  &::after {
-    font-size: 16px;
-    font-weight: bold;
+  > i {
+    line-height: 52px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $mainred;
+    color: $mainred;
+    background: white;
+  }
+  @media (max-width: 767px) {
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+
+    > i {
+      line-height: 29px;
+    }
   }
 }
 
@@ -427,4 +443,40 @@ $beige: #f8f6f1;
   .section-subtitle {
     top: -25px;
   }
+
+  .case-swiper {
+    padding-bottom: 0;
+  }
 }
+
+.coupon-section {
+  background-image: url('../img/yellow-line-bg.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.custom-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.qrcode-box {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .coupon-section h3 {
+    font-size: 22px;
+  }
+
+  .coupon-section .btn {
+    font-size: 16px;
+  }
+}
+
