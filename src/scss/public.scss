@@ -8,6 +8,7 @@
 $maincolor: #f7f3ed; // 淺米色
 $mainblack: #393636; // 主黑色
 $mainred: #e50113; // 主紅色
+$mainyellow:#FDDC3C; // 主黃色
 
 body {
   position: relative;
@@ -417,6 +418,10 @@ header {
 
     &.bg-number-left {
       left: 20%;
+
+      @include media-breakpoint-down(md) {
+        left: 50%;
+      }
     }
 
     &.bg-number-left20 {
