@@ -22,15 +22,25 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/page.css" />
     <link rel="stylesheet" href="css/public.css" />
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/page.js"
+    ></script>
     <script
       language="javascript"
       type="text/javascript"
       src="js/public.js"
     ></script>
+
   </head>
 
   <body lang="zh-Hant">
@@ -51,9 +61,9 @@
               <li class="nav-item ps-5"><a class="nav-link custom-nav" href="index.html">首頁</a></li>
               <li class="nav-item ps-5"><a class="nav-link custom-nav" href="coupon.html">優惠券平台</a></li>
               <li class="nav-item ps-5"><a class="nav-link custom-nav" href="around.html">周邊好康</a></li>
-              <li class="nav-item ps-5"><a class="nav-link custom-nav" href="game.html">任務遊戲</a></li>
+              <li class="nav-item ps-5"><a class="nav-link custom-nav active" href="game.html">任務遊戲</a></li>
               <li class="nav-item ps-5"><a class="nav-link custom-nav" href="about.html">關於我們</a></li>
-              <li class="nav-item ps-5"><a class="nav-link custom-nav active" href="contact.html">聯絡我們</a></li>
+              <li class="nav-item ps-5"><a class="nav-link custom-nav" href="contact.html">聯絡我們</a></li>
             </ul>
           </div>
     
@@ -93,25 +103,25 @@
     </div>
 
     <!-- title cent -->
-    <section class="contact-image-section mb-200">
+    <section class="contact-image-section mb-100">
       <!-- 米色色塊 -->
       <div class="underlay-bar bg-beige w-100 pt-md-5 pt-3">
-        <p class="f13 fw-normal mb-0">CONTACT US</p>
-        <p class="f48 fw-bold">聯絡我們</p>
+        <p class="f13 fw-normal mb-0">The games</p>
+        <p class="f48 fw-bold">任務遊戲</p>
       </div>
     
       <!-- 圖片＋文字 -->
       <div class="container max-1310 position-relative z-1 translate-middle-y">
         <div class="image-wrapper position-relative overflow-hidden rounded">
           <!-- 圖片 -->
-          <img src="img/contact-title-bg.png" alt="聯絡我們" class="img-fluid w-100" />
+          <img src="img/game-title-bg.png" alt="任務遊戲" class="img-fluid w-100" />
 
           <!-- 文字區塊 -->
           <div class="overlay-text d-flex flex-column justify-content-center text-white">
             <div class="content-wrapper text-start">
-              <p class="f48 fw-bold lh-sm mb-md-3 mb-1">JOYin隨時在這裡<br>等你來聯絡</p>
-              <p class="f20 fw-light mb-3 d-md-block d-none">無論是業務合作、產品諮詢或系統DEMO<br>都歡迎與JOYin聯繫</p>
-              <a href="#contactFormSection" class="btn btn-danger px-md-4 py-md-2">填寫聯絡表單</a>
+              <p class="f48 fw-bold lh-sm mb-md-3 mb-1">趣味互動行銷<br>讓活動參與變得更簡單</p>
+              <p class="f20 fw-light mb-3 d-md-block d-none">任務模組 × 遊戲互動 × 抽獎刺激</p>
+              <a href="#contactFormSection" class="btn btn-danger px-md-4 py-md-2">探索遊戲範例</a>
             </div>
           </div>
         </div>
@@ -119,47 +129,207 @@
     </section>
     
     <!-- 中間內容 -->
-    <section class="map-contact-section position-relative z-666 py-5 mb-5 text-start">
-      <div class="container max-1310">
-        <div class="row g-4">
-          <!-- 左側文字內容 -->
-          <div class="col-md-6 col-12">
-            <h2 class="f48 fw-bolder mb-3">與我們的<br>專業團隊聯絡</h2>
-            <div class="contact-desc">
-              <p class="color-gray2 fw-light me-md-5 me-0">
-                若您對 JOYin 的行銷服務有任何疑問，或希望了解更多平台應用與合作方式，歡迎填寫聯絡表單或直接透過以下資訊與 JOYin 聯繫。
-                我們將於收到訊息後 1–2 個工作日內主動回覆您，期待成為您推動行銷效益的最佳夥伴！
-              </p>
+    <div class="section-title-block text-center mt-5">
+      <!-- 淺色大號數字背景 -->
+      <h2 class="bg-number gameuse">01</h2>
+      <!-- 小標題 -->
+      <p class="sub-title mb-2">Why Choose us</p>
+      <!-- 主標題 -->
+      <h3 class="main-title fw-bold">JOYin 是您數位行銷的最佳夥伴</h3>
+    </div>
+    <div class="px-2">
+      <p class="fs-6">
+        支援轉轉樂、戳戳樂、節慶闖關等多種互動遊戲模組，可依據促銷主題快速部署，無需自行開發。操作流程直覺，適合線上與線下各種活動搭配使用，提升活動趣味與參與動力。
+      </p>
+    </div>
+
+    <!-- 01 -->
+    <section class="custom-mockup-swiper position-relative pb-md-5 pb-0">
+      <!-- 米色背景 -->
+      <div class="custom-mockup-bg"></div>
+      <div class="container-1310 position-relative">
+        <div class="swiper mockupSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/phone-img01.png" class="img-fluid" alt="mock1">
             </div>
-    
-            <p class="fw-normal"><b>Phone:</b><br>+886-937-773-381</p>
-            <p class="fw-normal"><b>Mail:</b><br><a href="mailto:eva.chen@systex.com">eva.chen@systex.com</a></p>
-            <p class="fw-normal"><b>Address:</b><br>
-              公司總部：114 台北市內湖區瑞光路318號<br>
-              JOYin據點：235 台灣中和區連城路168-2號6樓
-            </p>
-            <p class="fw-normal"><b>Time:</b><br>週一至週五：10:00 AM – 6:00 PM<br>週六、週日及國定假日休息</p>
-          </div>
-    
-          <!-- 右側地圖 -->
-          <div class="col-md-6 col-12 position-relative">
-            <!-- Open Map 按鈕 -->
-            <button class="btn btn-warning open-map-btn fw-bold">
-              OPEN<br>MAP
-            </button>
-    
-            <!-- 地圖 -->
-            <div class="map-embed border-wrap">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.077927439325!2d121.49092551228334!3d24.99746787774773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468027e51cdfcbd%3A0x85240be7733ff492!2z57K-6Kqg6LOH6KiK6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1749796611567!5m2!1szh-TW!2stw"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div class="swiper-slide">
+              <img src="img/phone-img02.png" class="img-fluid" alt="mock2">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/phone-img03.png" class="img-fluid" alt="mock3">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/phone-img01.png" class="img-fluid" alt="mock4">
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- 02+03 -->
+    <div class="container custom-container py-5">
+      <!-- 02區塊一 -->
+      <div class="row mb-5 align-items-center activity-block flex-column flex-lg-row justify-content-between py-md-5 py-2">
+        <div class="col-12 col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
+          <div class="section-title-block text-start">
+            <!-- 淺色大號數字背景 -->
+            <h2 class="bg-number bg-number-left">02</h2>
+            <!-- 小標題 -->
+            <p class="sub-title mb-2">Data Tracking</p>
+            <!-- 主標題 -->
+            <h3 class="main-title fw-bold">互動行為數據一手掌握</h3>
+          </div>
+          <p class="section-text pt-2 text-start">
+            每場任務活動都可追蹤參與人數、點擊率、中獎率與任務完成情況，
+            後台即時回傳報表，協助品牌優化遊戲機制與獎項配置，提升整體行銷效益。
+          </p>
+        </div>
+        <div class="col-11 col-lg-6 order-2 order-lg-2 image-block special-effect">
+          <div class="red-border"></div>
+          <div class="dotted-bg"></div>
+          <img src="img/game01.png" class="img-fluid" alt="Customer Satisfaction">
+        </div>
+      </div>
+    
+      <!-- 03 -->
+      <!-- 03區塊（RWD 時圖在下、字在上） -->
+      <div class="row align-items-center activity-block flex-column flex-lg-row justify-content-between py-md-5 py-2">
+        <div class="col-12 col-lg-6 order-2 order-lg-1 image-block">
+          <img src="img/game02.png" class="img-fluid" alt="Game Interaction">
+        </div>
+        <div class="col-12 col-lg-5 order-1 order-lg-2 text-block mt-4 mt-lg-0">
+          <div class="section-title-block text-start">
+            <!-- 淺色大號數字背景 -->
+            <h2 class="bg-number bg-number-left">03</h2>
+            <!-- 小標題 -->
+            <p class="sub-title mb-2">the Activity</p>
+            <!-- 主標題 -->
+            <h3 class="main-title fw-bold">抽獎機制＋獎勵設計
+              帶動行動轉換</h3>
+          </div>
+          <p class="section-text pt-2 text-start">
+            可依據活動目標設計點數、抽獎次數、即時獎品兌換等獎勵規則，刺激用戶完成任務。結合會員系統還可導入消費回饋與再行銷誘因，強化活動後的留客與回購行為。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <!-- Swiper CSS -->
+    <div class="section-bg py-5">
+      <div class="container custom-container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <div class="section-number">05</div>
+            <small class="section-subtitle">Success Stories</small>
+            <h3 class="section-title">成功案例</h3>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper case-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例1">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div>
+                    <h5><span class="red-line"></span> 連鎖飲料店：轉盤抽折價券</h5>
+                    <p class="text-muted mt-2">
+                      推出線上轉盤活動，帶動每日參與人次超過 3,000+，活動期間門市營收提升 27%。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow" aria-label="上一張">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="case-button-next case-arrow" aria-label="下一張">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例2">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div>
+                    <h5><span class="red-line"></span>3333</h5>
+                    <p class="text-muted mt-2">
+                      結合打卡任務與折扣兌換，單日新增會員數提升 300%，加速導購轉換。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow"></div>
+                    <div class="case-button-next case-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例3">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div>
+                    <h5><span class="red-line"></span>222222</h5>
+                    <p class="text-muted mt-2">
+                      用戶完成問答活動即獲得抽獎機會，提升品牌教育與互動率。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow"></div>
+                    <div class="case-button-next case-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例4">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div>
+                    <h5><span class="red-line"></span> 食品電商：會員積分任務</h5>
+                    <p class="text-muted mt-2">
+                      每完成一項指定任務即獲得積分，可折抵商品換購，強化用戶黏著度與回購。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow"></div>
+                    <div class="case-button-next case-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+    
+    
     
 
     <!-- 聯絡我們表單 -->

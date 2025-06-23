@@ -411,6 +411,10 @@ header {
     white-space: nowrap;
     pointer-events: none;
 
+    &.gameuse {
+      top: 30% !important;
+    }
+
     &.bg-number-left {
       left: 20%;
     }
@@ -454,11 +458,27 @@ header {
   max-width: 1310px;
   margin: 0 auto;
 }
+.mb-200 {
+  margin-bottom: -12%;
+  @include media-breakpoint-down(md) {
+    margin-bottom: -22%;
+  }
+}
+
+.mb-100 {
+  margin-bottom: -12%;
+  @include media-breakpoint-down(md) {
+    margin-bottom: -10%;
+  }
+}
 .ps-32 {
   padding-left: 32px;
 }
 .color-gray2 {
   color: #949494;
+}
+.z-666 {
+  z-index: 666;
 }
 
 // font
