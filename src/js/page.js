@@ -61,3 +61,68 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// cupont-02
+$(function() {
+  // 預設第一個展開，第一張圖片沒遮罩
+  $('.coupon-types-list li').removeClass('active').eq(0).addClass('active');
+  $('.coupon-types-img-wrap').removeClass('active').eq(0).addClass('active');
+
+  // 滑鼠進入左側選單，展開細節 + 解除對應右圖遮罩
+  $('.coupon-types-list li').on('mouseenter focus', function() {
+    let idx = $(this).data('index');
+    $('.coupon-types-list li').removeClass('active');
+    $(this).addClass('active');
+    $('.coupon-types-img-wrap').removeClass('active');
+    $('.coupon-types-img-wrap[data-index="' + idx + '"]').addClass('active');
+  });
+
+  // 手機點擊也可以展開
+  $('.coupon-types-list li').on('click', function() {
+    let idx = $(this).data('index');
+    $('.coupon-types-list li').removeClass('active');
+    $(this).addClass('active');
+    $('.coupon-types-img-wrap').removeClass('active');
+    $('.coupon-types-img-wrap[data-index="' + idx + '"]').addClass('active');
+  });
+});
+
+
+// about照片
+document.addEventListener("DOMContentLoaded", function () {
+  const slider1310 = new Swiper('.slider1310-swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    navigation: {
+      nextEl: '.swiper-button-next.slider1310-arrow',
+      prevEl: '.swiper-button-prev.slider1310-arrow'
+    },
+    grabCursor: true
+  });
+});
+
+// 成員照片
+document.addEventListener("DOMContentLoaded", function () {
+  const memberSwiper = new Swiper('.memberintro-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.memberintro-arrow-next',
+      prevEl: '.memberintro-arrow-prev'
+    }
+  });
+
+  $('.memberintro-arrow-next').on('click', function() {
+    memberSwiper.slideNext();
+  });
+  $('.memberintro-arrow-prev').on('click', function() {
+    memberSwiper.slidePrev();
+  });
+
+});
+
