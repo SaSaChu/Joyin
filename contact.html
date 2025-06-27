@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+
+    <title>Joyin - 聯絡我們</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/public.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/public.js"
+    ></script>
+  </head>
+
+  <body lang="zh-Hant">
+    <div>
+    <!-- header -->
+    <header>
+      <div class="max-1440">
+        <div class="row align-items-center p-3">
+    
+          <!-- Logo 區塊 -->
+          <div class="col-6 col-md-3 text-start">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" height="32" /></a>
+          </div>
+    
+          <!-- 電腦版選單 -->
+          <div class="col-md-9 d-none d-md-block">
+            <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="index.html">首頁</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="coupon.html">優惠券平台</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="around.html">周邊好康</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="game.html">任務遊戲</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="about.html">關於我們</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav active" href="contact.html">聯絡我們</a></li>
+            </ul>
+          </div>
+    
+          <!-- 手機版：漢堡按鈕 -->
+          <div class="col-6 d-md-none text-end">
+            <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+              <i class="fas fa-bars fs-3 text-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Bootstrap 手機滑出選單 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="coupon.html">優惠券平台</a></li>
+          <li class="nav-item"><a class="nav-link" href="around.html">周邊好康</a></li>
+          <li class="nav-item"><a class="nav-link" href="game.html">任務遊戲</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+        </ul>
+        <div class="social-icons d-flex justify-content-center gap-3 mt-4">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+
+      
+    </div>
+
+    <!-- title cent -->
+    <section class="contact-image-section mb-200">
+      <!-- 米色色塊 -->
+      <div class="underlay-bar bg-beige w-100 pt-md-5 pt-3">
+        <p class="f13 fw-normal mb-0">CONTACT US</p>
+        <p class="f48 fw-bold">聯絡我們</p>
+      </div>
+    
+      <!-- 圖片＋文字 -->
+      <div class="container max-1310 position-relative z-1 translate-middle-y">
+        <div class="image-wrapper position-relative overflow-hidden rounded">
+          <!-- 圖片 -->
+          <img src="img/contact-title-bg.png" alt="聯絡我們" class="img-fluid w-100" />
+
+          <!-- 文字區塊 -->
+          <div class="overlay-text d-flex flex-column justify-content-center text-white">
+            <div class="content-wrapper text-start">
+              <p class="f48 fw-bold lh-sm mb-md-3 mb-1">JOYin隨時在這裡<br>等你來聯絡</p>
+              <p class="f20 fw-light mb-3 d-md-block d-none">無論是業務合作、產品諮詢或系統DEMO<br>都歡迎與JOYin聯繫</p>
+              <a href="#contactFormSection" class="btn btn-danger px-md-4 py-md-2">填寫聯絡表單</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 中間內容 -->
+    <section class="map-contact-section position-relative z-666 py-5 mb-5 text-start">
+      <div class="container max-1310">
+        <div class="row g-4">
+          <!-- 左側文字內容 -->
+          <div class="col-md-6 col-12">
+            <h2 class="f48 fw-bolder mb-3">與我們的<br>專業團隊聯絡</h2>
+            <div class="contact-desc">
+              <p class="color-gray2 fw-light me-md-5 me-0">
+                若您對 JOYin 的行銷服務有任何疑問，或希望了解更多平台應用與合作方式，歡迎填寫聯絡表單或直接透過以下資訊與 JOYin 聯繫。
+                我們將於收到訊息後 1–2 個工作日內主動回覆您，期待成為您推動行銷效益的最佳夥伴！
+              </p>
+            </div>
+    
+            <p class="fw-normal"><b>Phone:</b><br>+886-937-773-381</p>
+            <p class="fw-normal"><b>Mail:</b><br><a href="mailto:eva.chen@systex.com">eva.chen@systex.com</a></p>
+            <p class="fw-normal"><b>Address:</b><br>
+              公司總部：114 台北市內湖區瑞光路318號<br>
+              JOYin據點：235 台灣中和區連城路168-2號6樓
+            </p>
+            <p class="fw-normal"><b>Time:</b><br>週一至週五：10:00 AM – 6:00 PM<br>週六、週日及國定假日休息</p>
+          </div>
+    
+          <!-- 右側地圖 -->
+          <div class="col-md-6 col-12 position-relative">
+            <!-- Open Map 按鈕 -->
+            <button class="btn btn-warning open-map-btn fw-bold">
+              OPEN<br>MAP
+            </button>
+    
+            <!-- 地圖 -->
+            <div class="map-embed border-wrap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.077927439325!2d121.49092551228334!3d24.99746787774773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468027e51cdfcbd%3A0x85240be7733ff492!2z57K-6Kqg6LOH6KiK6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1749796611567!5m2!1szh-TW!2stw"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- 聯絡我們表單 -->
+    <section class="contact-section d-flex align-items-center" id="contactFormSection">
+      <div class="container">
+        <div class="row justify-content-end text-start">
+          <div class="col-lg-6">
+            <div class="contact-form text-white">
+              <small class="text-uppercase">Contact Us</small>
+              <p class="f30 fw-bold mt-2 mb-4">
+                讓我們幫助您的<br />數位業務發展
+              </p>
+              <form id="contactForm">
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="姓名 *"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="電話或Email *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司名稱"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司職務"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <select class="form-select custom-select" required>
+                    <option value="" disabled selected>聯絡事項</option>
+                    <option value="合作提案">合作提案</option>
+                    <option value="產品諮詢">產品諮詢</option>
+                    <option value="售後服務">售後服務</option>
+                    <option value="其他">其他</option>
+                  </select>
+                </div>
+                <div class="mb-3 position-relative">
+                  <div class="custom-file-wrapper d-flex align-items-center">
+                    <input type="text" class="form-control fake-input" placeholder="上傳檔案" readonly />
+                    <label class="upload-btn">
+                      檔案
+                      <input type="file" class="real-input" />
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger px-4 py-2">
+                  確定送出
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12 mb-4 mb-md-0">
+            <div class="footer-logo d-flex align-items-center justify-content-md-start justify-content-center">
+              <img
+                src="img/logo.svg"
+                alt="JOYin logo"
+                class="me-2"
+                style="height: 48px"
+              />
+            </div>
+            <p class="fs-5 text-start mt-3 d-none d-md-block">
+              我們一起開創數位的未來<br />歡迎諮詢
+            </p>
+            <p class="fs-5 text-center mt-3 d-md-none d-block">
+              我們一起開創數位的未來歡迎諮詢
+            </p>
+            <div class="footer-social-icons d-flex gap-4 mt-3 align-items-center justify-content-md-start justify-content-center">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 pt-4 pt-lg-0">
+            <div class="row">
+              <div class="col-6 mb-4 mb-md-0 text-start">
+                <ul class="footer-ul">
+                  <li><a href="index.html">首頁</a></li>
+                  <li><a href="about.html">關於我們</a></li>
+                  <li><a href="coupon.html">優惠券平台</a></li>
+                  <li><a href="around.html">周邊好康</a></li>
+                  <li><a href="game.html">任務遊戲</a></li>
+                </ul>
+              </div>
+              <div class="col-6 mb-4 mb-md-0 text-start">
+                <ul class="footer-ul">
+                  <li><a href="privacy.html">隱私條款</a></li>
+                  <li><a href="terms.html">服務條款</a></li>
+                  <li><a href="qa.html">常見問題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 col-12 text-start px-md-2 px-4  pt-4 pt-lg-0">
+            <p class="f18">聯絡我們</p>
+
+            <p>
+              <img class="me-2" src="img/icon-phone.svg" />
+              +886-937-773-381
+            </p>
+            <p>
+              <img class="me-2" src="img/icon-mail.svg" />
+              <a href="mailto:eva.chen@systex.com">eva.chen@systex.com </a>
+            </p>
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-plant.svg" />
+              <b>公司總部：</b>114台北市內湖區瑞光路318號
+            </p>
+            <p class="ps-32">
+              <b>好康多據點：</b>235台灣中和區連城路168-2號6樓
+            </p>
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-clock.svg" />
+              <b></b>週一至週五：</b>9:00 AM – 6:00 PM<br />
+            </p>
+            <p class="ps-32">
+              <b>週六、週日及國定假日休息</b>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center small mt-3">
+          Joyin © 2025. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/Jquery.min.js"></script>
+    <script src="js/Bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+
+    <title>Joyin</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/public.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/page.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/public.js"
+    ></script>
+
+  </head>
+
+  <body lang="zh-Hant">
+    <div>
+    <!-- header -->
+    <header>
+      <div class="max-1440">
+        <div class="row align-items-center p-3">
+    
+          <!-- Logo 區塊 -->
+          <div class="col-6 col-md-3 text-start">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" height="32" /></a>
+          </div>
+    
+          <!-- 電腦版選單 -->
+          <div class="col-md-9 d-none d-md-block">
+            <ul class="navbar-nav flex-row justify-content-end px-3 py-2">
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="index.html">首頁</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav active" href="coupon.html">優惠券平台</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="around.html">周邊好康</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="game.html">任務遊戲</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="about.html">關於我們</a></li>
+              <li class="nav-item ps-lg-5 ps-4"><a class="nav-link custom-nav" href="contact.html">聯絡我們</a></li>
+            </ul>
+          </div>
+    
+          <!-- 手機版：漢堡按鈕 -->
+          <div class="col-6 d-md-none text-end">
+            <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+              <i class="fas fa-bars fs-3 text-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Bootstrap 手機滑出選單 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="coupon.html">優惠券平台</a></li>
+          <li class="nav-item"><a class="nav-link" href="around.html">周邊好康</a></li>
+          <li class="nav-item"><a class="nav-link" href="game.html">任務遊戲</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+        </ul>
+        <div class="social-icons d-flex justify-content-center gap-3 mt-4">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+
+      
+    </div>
+
+    <!-- title cent -->
+    <section class="contact-image-section mb-100">
+      <!-- 米色色塊 -->
+      <div class="underlay-bar bg-beige w-100 pt-md-5 pt-3">
+        <p class="f13 fw-normal mb-0">Coupon Platform</p>
+        <p class="f48 fw-bold">優惠劵平台</p>
+      </div>
+    
+      <!-- 圖片＋文字 -->
+      <div class="container max-1310 position-relative z-1 translate-middle-y">
+        <div class="image-wrapper position-relative overflow-hidden rounded">
+          <!-- 圖片 -->
+          <img src="img/coupon-title-bg.png" alt="任務遊戲" class="img-fluid w-100" />
+
+          <!-- 文字區塊 -->
+          <div class="overlay-text d-flex flex-column justify-content-center text-white">
+            <div class="content-wrapper text-start">
+              <p class="f48 fw-bold lh-sm mb-md-3 mb-1">靈活應對行銷挑戰<br>電子優惠券輕鬆管理！</p>
+              <p class="f20 fw-light mb-3 d-md-block d-none">多種券型 × 即時上架 × 數據分析</p>
+              <a href="#couponmore" class="btn btn-danger px-md-4 py-md-2">了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 中間內容 -->
+    <div class="pt-md-5 pt-2">
+      <div class="section-title-block text-center mt-5">
+        <!-- 淺色大號數字背景 -->
+        <h2 class="bg-number centuse">01</h2>
+        <!-- 小標題 -->
+        <p class="sub-title mb-2">Flexible Options</p>
+        <!-- 主標題 -->
+        <h3 class="main-title fw-bold">平台導入方式<br>彈性選擇建置或租賃</h3>
+      </div>
+      <div class="px-2 pt-md-3 pt-0">
+        <p class="fs-6 greycolor">
+          依企業需求，提供兩種導入方案
+        </p>
+      </div>
+    </div>
+
+    <!-- 01 -->
+    <div class="custom-feature-section">
+      <div class="container-xxl custom-feature-container">
+        <div class="row g-4 justify-content-center">
+          <!-- 專屬開發區塊 -->
+          <div class="col-12 col-sm-6 mt-md-3 mt-0">
+            <div class="custom-feature-card">
+              <div class="custom-feature-img">
+                <img src="img/coupon-img01.png" alt="專屬開發圖片" class="img-fluid" />
+              </div>
+              <div class="custom-feature-content">
+                <h3 class="custom-feature-title">專屬開發，客製化功能</h3>
+                <ul class="custom-feature-list">
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>可整合內部系統</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>高度彈性、長期使用適合</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>初期投入成本較高</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>適用於大型或複雜需求</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 即租即用區塊 -->
+          <div class="col-12 col-sm-6 mt-md-3 mt-0">
+            <div class="custom-feature-card">
+              <div class="custom-feature-img">
+                <img src="img/coupon-img02.png" alt="即租即用圖片" class="img-fluid" />
+              </div>
+              <div class="custom-feature-content">
+                <h3 class="custom-feature-title">即租即用，快速導入</h3>
+                <ul class="custom-feature-list">
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>無須部署設備與維運</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>成本可控、適合短中期專案</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>月租或年租機制，預算彈性</li>
+                  <li><i class="align-middle bi bi-check-circle-fill custom-feature-check"></i>適用於快速推廣或試行專案</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <!-- Bootstrap Icons -->
+    <div class="coupon-types-section mb-5">
+      <div class="container-xxl coupon-types-container">
+        <div class="row g-0">
+          <!-- 左側列表 -->
+          <div class="col-12 col-lg-4 coupon-types-list-col">
+            <div class="coupon-types-list-wrap">
+              <div>
+                <div class="section-title-block text-md-start text-center">
+                  <!-- 淺色大號數字背景 -->
+                  <h2 class="bg-number left-one-use">02</h2>
+                  <!-- 小標題 -->
+                  <p class="sub-title mb-2">Coupon Type</p>
+                  <!-- 主標題 -->
+                  <h3 class="main-title fw-bold">優惠券類型</h3>
+                </div>
+                <p class="section-text pt-2 greycolor  text-md-start text-center">
+                  平台支援以下6種常用券種，滿足各式促銷需求。
+                </p>
+              </div>
+              <ul class="coupon-types-list pt-3">
+                <li class="active" data-index="0">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">單店限定，專屬發送</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    只在單一門市推出的獨家優惠券，數量獨立、先到先搶，強化單點活動效果，適合新店開幕或區域性推廣。
+                  </div>
+                </li>
+                <li data-index="1">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">多店齊發，各自管理</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    相同券種同步在多間門市推出，但每家門市自管數量，不共用。彈性推廣、不干擾其他門市庫存，便於活動分區操作。
+                  </div>
+                </li>
+                <li data-index="2">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">總量共享，通路聯動</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    一張券全門市通用、共用數量，快速創造全品牌活動聲量，適合大型促銷或品牌週年慶主打。
+                  </div>
+                </li>
+                <li data-index="3">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">單店多券，自主組合</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    一間門市同時推出多款優惠券，各券分開設計、獨立管理，適合依據門市客群需求自訂券種，增加多樣化選擇。
+                  </div>
+                </li>
+                <li data-index="4">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">多店多券，各店自訂</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    每家門市推出不同種類與數量的優惠券，行銷玩法百變靈活，適合加盟體系或異業聯盟客製推廣。
+                  </div>
+                </li>
+                <li data-index="5">
+                  <div class="coupon-types-main">
+                    <span class="coupon-types-dot"></span>
+                    <span class="coupon-types-label">共享＋自營，混合彈性</span>
+                    <i class="bi bi-chevron-down coupon-types-arrow"></i>
+                  </div>
+                  <div class="coupon-types-detail">
+                    部分券種由總部統一發行並全門市共享，其餘券種則由門市各自管理。讓總部活動聲量與門市行銷策略雙軌並行。
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 右側圖片 -->
+          <div class="col-12 col-lg-8 coupon-types-img-col">
+            <div class="row g-3 coupon-types-img-grid">
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="0">
+                  <img src="img/coupon-type01.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="1">
+                  <img src="img/coupon-type02.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="2">
+                  <img src="img/coupon-type03.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="3">
+                  <img src="img/coupon-type04.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="4">
+                  <img src="img/coupon-type05.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+              <div class="col-4 col-6-sm">
+                <div class="coupon-types-img-wrap" data-index="5">
+                  <img src="img/coupon-type06.png" class="coupon-types-img" alt="">
+                  <div class="coupon-types-img-mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- 03 -->
+    <section class="img-text-section">
+      <div class="container img-text-section__container pt-5 pt-md-0">
+        <div class="row align-items-center flex-column flex-lg-row  pt-5 pt-md-0">
+          <!-- 圖片欄 -->
+          <div class="col-12 col-lg-6 img-text-section__image-col pb-0 mb-0 px-0 order-2 order-lg-1">
+            <img
+              src="img/coupon03.png"
+              alt="示意圖"
+              class="img-text-section__image"
+            />
+          </div>
+          <!-- 文字欄 -->
+          <div class="col-12 col-lg-6 img-text-section__text-col order-1 order-lg-2">
+            <div class="section-title-block text-md-start text-center">
+              <!-- 淺色大號數字背景 -->
+              <h2 class="bg-number text-white">03</h2>
+              <!-- 小標題 -->
+              <p class="sub-title mb-2">POS system integration</p>
+              <!-- 主標題 -->
+              <h3 class="main-title fw-bold">支援多品牌POS對接</br>現場核銷不卡關</h3>
+            </div>
+            <p class="section-text pt-2 greycolor text-start">
+              與全台主流POS系統無縫整合，無須額外裝置，即可在店端快速核銷，支援條碼與QR Code掃碼方式，大幅降低門市作業成本，並保障顧客使用體驗。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 04 -->
+    <div class="container custom-container py-5">
+      <!-- 04區塊一 -->
+      <div class="row mb-5 align-items-center activity-block flex-column flex-lg-row justify-content-between py-md-5 py-2">
+        <div class="col-12 col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
+          <div class="section-title-block  text-md-start text-center">
+            <!-- 淺色大號數字背景 -->
+            <h2 class="bg-number">04</h2>
+            <!-- 小標題 -->
+            <p class="sub-title mb-2">POS system integration</p>
+            <!-- 主標題 -->
+            <h3 class="main-title fw-bold">支援多品牌POS對接，現場核銷不卡關</h3>
+          </div>
+          <p class="section-text pt-2 greycolor text-start">
+            與全台主流POS系統無縫整合，無須額外裝置，即可在店端快速核銷，支援條碼與QR Code掃碼方式，大幅降低門市作業成本，並保障顧客使用體驗。
+          </p>
+        </div>
+        <div class="col-11 col-lg-6 order-2 order-lg-2 image-block special-effect">
+          <div class="yellow-border"></div>
+          <div class="dotted-bg"></div>
+          <img src="img/coupon01.png" class="img-fluid" alt="Customer Satisfaction">
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="coupon-section2">
+      <div class="container custom-container py-5">
+        <!-- 05區塊（RWD 時圖在下、字在上） -->
+        <div class="row align-items-center activity-block flex-column flex-lg-row justify-content-between py-md-5 py-2">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 image-block special-effect">
+            <div class="red-border"></div>
+            <div class="dotted-bg"></div>
+            <img src="img/coupon02.png" class="img-fluid" alt="Game Interaction">
+          </div>
+          <div class="col-12 col-lg-5 order-1 order-lg-2 text-block mt-4 mt-lg-0">
+            <div class="section-title-block  text-md-start text-center">
+              <!-- 淺色大號數字背景 -->
+              <h2 class="bg-number left-one-use">05</h2>
+              <!-- 小標題 -->
+              <p class="sub-title mb-2">Real-time data analysis</p>
+              <!-- 主標題 -->
+              <h3 class="main-title fw-bold">數據即時回傳，行銷成果看得見</h3>
+            </div>
+            <p class="section-text pt-2 greycolor text-start">
+              提供核銷率、使用次數、券種成效等多項指標，透過可視化儀表板掌握活動成效，幫助品牌快速判斷優惠成效與調整策略，提升行銷投資報酬率。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="section-bg py-5">
+      <div class="container custom-container">
+        <div class="row pt-md-5 pt-0">
+          <div class="col-12 text-center mb-5">
+            <div class="section-title-block text-center mt-5">
+              <!-- 淺色大號數字背景 -->
+              <h2 class="bg-number centuse text-white">06</h2>
+              <!-- 小標題 -->
+              <p class="sub-title mb-2">Success Stories</p>
+              <!-- 主標題 -->
+              <h3 class="main-title fw-bold">成功案例</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper case-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例1">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div class="text-start">
+                    <p class="f28 fw-bold"><span class="red-line"></span>連鎖飲料店：轉盤抽折價券</p>
+                    <p class="text-muted mt-2 ps-3">
+                      推出線上轉盤活動，帶動每日參與人次超過 3,000+，活動期間門市營收提升 27%。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow" aria-label="上一張">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="case-button-next case-arrow" aria-label="下一張">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例1">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div class="text-start">
+                    <p class="f28 fw-bold"><span class="red-line"></span>百貨商場：戳戳樂領贈品</p>
+                    <p class="text-muted mt-2 ps-3">
+                      搭配來店集點任務，完成遊戲可兌換小禮，帶動回流來店率增加 45%，提升假日人潮。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow" aria-label="上一張">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="case-button-next case-arrow" aria-label="下一張">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例1">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div class="text-start">
+                    <p class="f28 fw-bold"><span class="red-line"></span>電商品牌：滿額任務抽好禮</p>
+                    <p class="text-muted mt-2 ps-3">
+                      結合購物金＋任務條件，完成任務可抽萬元禮包，任務完成率達 62%，訂單轉換率提升 33%。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow" aria-label="上一張">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="case-button-next case-arrow" aria-label="下一張">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="row flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <img src="img/case01.png" class="img-fluid" alt="案例1">
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
+                  <div class="text-start">
+                    <p class="f28 fw-bold"><span class="red-line"></span>銀行會員活動：集點抽抽樂</p>
+                    <p class="text-muted mt-2 ps-3">
+                      透過每日簽到與活動參與累積點數參加抽獎，促使App每日活躍數提升 2.5 倍，有效增加用戶黏著度。
+                    </p>
+                  </div>
+                  <div class="arrow-group mt-4 d-flex justify-content-end gap-3">
+                    <div class="case-button-prev case-arrow" aria-label="上一張">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="case-button-next case-arrow" aria-label="下一張">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="coupon-section">
+      <div class="container custom-container">
+        <div class="row align-items-center justify-content-center flex-column flex-lg-row">
+          <!-- 左側 QRCode -->
+          <div class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
+            <div class="qrcode-box float-md-end shadow p-3 bg-white d-inline-block rounded">
+              <img src="img/qr.svg" alt="QRCode" class="img-fluid" width="180" />
+            </div>
+          </div>
+          <!-- 右側文字與按鈕 -->
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <h3 class="fw-bold lh-base mb-3">
+              快來體驗看看<br />
+              我們優惠券平台
+            </h3>
+            <a href="#" class="btn btn-danger px-4 py-2 rounded-pill">立即體驗試用</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 聯絡我們表單 -->
+    <section class="contact-section d-flex align-items-center" id="contactFormSection">
+      <div class="container">
+        <div class="row justify-content-end text-start">
+          <div class="col-lg-6">
+            <div class="contact-form text-white">
+              <small class="text-uppercase">Contact Us</small>
+              <p class="f30 fw-bold mt-2 mb-4">
+                讓我們幫助您的<br />數位業務發展
+              </p>
+              <form id="contactForm">
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="姓名 *"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="電話或Email *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司名稱"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="公司職務"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <select class="form-select custom-select" required>
+                    <option value="" disabled selected>聯絡事項</option>
+                    <option value="合作提案">合作提案</option>
+                    <option value="產品諮詢">產品諮詢</option>
+                    <option value="售後服務">售後服務</option>
+                    <option value="其他">其他</option>
+                  </select>
+                </div>
+                <div class="mb-3 position-relative">
+                  <div class="custom-file-wrapper d-flex align-items-center">
+                    <input type="text" class="form-control fake-input" placeholder="上傳檔案" readonly />
+                    <label class="upload-btn">
+                      檔案
+                      <input type="file" class="real-input" />
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger px-4 py-2">
+                  確定送出
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12 mb-4 mb-md-0">
+            <div class="footer-logo d-flex align-items-center justify-content-md-start justify-content-center">
+              <img
+                src="img/logo.svg"
+                alt="JOYin logo"
+                class="me-2"
+                style="height: 48px"
+              />
+            </div>
+            <p class="fs-5 text-start mt-3 d-none d-md-block">
+              我們一起開創數位的未來<br />歡迎諮詢
+            </p>
+            <p class="fs-5 text-center mt-3 d-md-none d-block">
+              我們一起開創數位的未來歡迎諮詢
+            </p>
+            <div class="footer-social-icons d-flex gap-4 mt-3 align-items-center justify-content-md-start justify-content-center">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 pt-4 pt-lg-0">
+            <div class="row">
+              <div class="col-6 mb-4 mb-md-0 text-start">
+                <ul class="footer-ul">
+                  <li><a href="index.html">首頁</a></li>
+                  <li><a href="about.html">關於我們</a></li>
+                  <li><a href="coupon.html">優惠券平台</a></li>
+                  <li><a href="around.html">周邊好康</a></li>
+                  <li><a href="game.html">任務遊戲</a></li>
+                </ul>
+              </div>
+              <div class="col-6 mb-4 mb-md-0 text-start">
+                <ul class="footer-ul">
+                  <li><a href="privacy.html">隱私條款</a></li>
+                  <li><a href="terms.html">服務條款</a></li>
+                  <li><a href="qa.html">常見問題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 col-12 text-start px-md-2 px-4  pt-4 pt-lg-0">
+            <p class="f18">聯絡我們</p>
+
+            <p>
+              <img class="me-2" src="img/icon-phone.svg" />
+              +886-937-773-381
+            </p>
+            <p>
+              <img class="me-2" src="img/icon-mail.svg" />
+              <a href="mailto:eva.chen@systex.com">eva.chen@systex.com </a>
+            </p>
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-plant.svg" />
+              <b>公司總部：</b>114台北市內湖區瑞光路318號
+            </p>
+            <p class="ps-32">
+              <b>好康多據點：</b>235台灣中和區連城路168-2號6樓
+            </p>
+            <p class="mb-0">
+              <img class="me-2" src="img/icon-clock.svg" />
+              <b></b>週一至週五：</b>9:00 AM – 6:00 PM<br />
+            </p>
+            <p class="ps-32">
+              <b>週六、週日及國定假日休息</b>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center small mt-3">
+          Joyin © 2025. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/Jquery.min.js"></script>
+    <script src="js/Bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
