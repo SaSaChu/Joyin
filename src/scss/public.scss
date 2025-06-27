@@ -18,7 +18,7 @@ body {
 
   margin: 0;
   padding: 0 0 0 0;
-  color: 393636;
+  color: #393636;
 
   font-size: 16px;
   text-align: center;
@@ -198,8 +198,8 @@ header {
   .footer-ul {
     list-style: none;
 
-    @include media-breakpoint-down(md) {
-      padding-left: 15px;
+    @include media-breakpoint-only(md) {
+      padding-left: 0;
     }
 
     > li {
@@ -405,15 +405,31 @@ header {
     font-weight: 700;
     color: #f7f5f0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    top: -100%;
+    left: 0;
+    /*transform: translate(-50%, -60%);*/
     z-index: 0;
     white-space: nowrap;
     pointer-events: none;
 
-    &.gameuse {
-      top: 30% !important;
+     @include media-breakpoint-down(md) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%)
+      }
+
+    &.centuse {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+    }
+
+    &.left-one-use {
+      top: -155%;
+
+      @include media-breakpoint-down(md) {
+        top: 43%;
+      }
     }
 
     &.bg-number-left {
@@ -510,6 +526,9 @@ header {
 }
 
 // font
+.greycolor {
+  color: $gray-600;
+}
 .f13 {
   font-size: 0.8rem;
 }

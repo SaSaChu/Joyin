@@ -86,7 +86,6 @@ $(function() {
   });
 });
 
-
 // about照片
 document.addEventListener("DOMContentLoaded", function () {
   const slider1310 = new Swiper('.slider1310-swiper', {
