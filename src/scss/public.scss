@@ -424,6 +424,15 @@ header {
       transform: translate(-50%, -70%);
     }
 
+    &.index-one-use {
+      top: -55%;
+
+      @include media-breakpoint-down(md) {
+        top: 82%;
+      }
+    }
+
+
     &.left-one-use {
       top: -155%;
 
