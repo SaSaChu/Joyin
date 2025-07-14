@@ -110,6 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 'auto',
     spaceBetween: 0,
     grabCursor: true,
+    centeredSlides: false,
+    slidesOffsetAfter: 0,
     navigation: {
       nextEl: '.memberintro-arrow-next',
       prevEl: '.memberintro-arrow-prev'

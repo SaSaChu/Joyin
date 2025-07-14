@@ -1495,22 +1495,36 @@ $beige: #f8f6f1;
 
 // 關鍵！滑動區外層直接負邊距，貼齊右側
 .memberintro-swiper-fullwrap {
-  width: 100vw;
-  margin-right: calc(-1 * ((100vw - 100%) / 2));
+  width: 100%;
+  margin-right: 0;
   padding-right: 0;
+  /*width: 100vw;*/
+  margin-right: calc(-1 * ((100vw - 100%) / 2));
+
   @media (max-width: 991.98px) {
     margin-right: 0;
     width: 100vw;
   }
 }
 
+.memberintro-swiper .swiper-slide {
+  width: auto !important;
+  min-width: 0;
+  max-width: none;
+}
 .memberintro-swiper {
+  padding-right: 0 !important;
+}
+
+/*.memberintro-swiper {
   width: 100vw;
   .swiper-wrapper {
     align-items: stretch;
   }
-}
+}*/
 .memberintro-card {
+  min-width: 260px;
+  max-width: 330px;
   background: #f7f4ef;
   border-radius: 16px;
   padding: 38px 24px 28px 24px;

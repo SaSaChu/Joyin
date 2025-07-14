@@ -12,6 +12,7 @@ $mainyellow:#FDDC3C; // 主黃色
 
 body {
   position: relative;
+  overflow-x: hidden;
 
   display: inline-block;
   width: 100%;
@@ -48,6 +49,7 @@ button {
 }
 
 header {
+  display: inline-block;
   width: 100%;
   background-color: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -505,7 +507,9 @@ header {
 }
 .max-1440 {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .max-1310 {
   max-width: 1310px;
@@ -571,6 +575,10 @@ header {
 }
 .f48 {
   font-size: 2.6rem;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 2rem;
+  }
 
   @include media-breakpoint-down(md) {
     font-size: 1.8rem;

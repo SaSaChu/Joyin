@@ -70,8 +70,9 @@ $mainred: #e50113; // 主紅色
 
   .max-1440 {
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   // 米色區塊，只蓋在主內容區與統計區塊之間
@@ -300,8 +301,8 @@ $mainred: #e50113; // 主紅色
       padding: 18px 8px 16px 12px;
     }
     .icon-service {
-      width: 68px;
-      height: 68px;
+      width: 100px;
+      height: 100px;
       @media (max-width: 576px) {
         width: 44px;
         height: 44px;
@@ -1162,7 +1163,8 @@ $mainred: #e50113; // 主紅色
   }
 }
 .videoprod-feature-icon img {
-  width: 40px; height: 40px;
+  width: 100px;
+  height: 100px;
   margin-right: 6px;
 }
 
