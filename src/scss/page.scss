@@ -47,7 +47,7 @@ $mainyellow: #FDDC3C; // 主黃色
     }
 
     @include media-breakpoint-down(lg) {
-      height: 295px;
+      height: 275px;
     }
 
     @include media-breakpoint-down(md) {
@@ -1177,13 +1177,22 @@ $beige: #f8f6f1;
   }
 }
 .brand-story-title {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #393939;
   letter-spacing: 2px;
   margin: 0;
-  @media (max-width: 991.98px) {
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 2.2rem;
+  }
+
+  @include media-breakpoint-down(xl) {
     font-size: 2rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
   }
 }
 
@@ -1349,12 +1358,24 @@ $beige: #f8f6f1;
 }
 
 .case-section-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #222;
   text-align: center;
   margin-bottom: 18px;
   letter-spacing: 1px;
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 2.2rem;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 2rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
+  }
 }
 
 .case-section-desc {
@@ -1447,12 +1468,21 @@ $beige: #f8f6f1;
 }
 
 .memberintro-title {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 18px;
   color: #393939;
-  @media (max-width: 991.98px) {
-    font-size: 1.5rem;
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 2.2rem;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 2rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
   }
 }
 .memberintro-desc {

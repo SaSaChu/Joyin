@@ -94,34 +94,34 @@ $(function () {
 // 首頁01 背景＋數字動畫-結束
 
 // 首頁08 - 開始
-const lbsData = [
-  {
-    title: "LBS定位推薦附近好康",
-    desc: "透過LBS定位技術，自動偵測使用者所在位置，即時推播鄰近店家的優惠資訊，強化區域性行銷效益，吸引周邊客群轉化為實際來店人潮。",
-  },
-  {
-    title: "資訊即時更新不中斷",
-    desc: "優惠內容由後台統一管理，可隨時新增、修改或下架活動資訊，確保消費者接收到的內容皆為最新版本，提升優惠使用率與信任感。",
-  },
-  {
-    title: "個人化推薦更精準",
-    desc: "系統可根據使用者歷史行為、偏好類型及常駐地點，自動推薦最相關的優惠資訊，提高點擊率與參與率，強化行銷投放效率。",
-  },
-];
-let currentIdx = 0;
+$(document).ready(function () {
+  const lbsData = [
+    {
+      title: "LBS定位推薦附近好康",
+      desc: "透過LBS定位技術，自動偵測使用者所在位置，即時推播鄰近店家的優惠資訊，強化區域性行銷效益，吸引周邊客群轉化為實際來店人潮。",
+    },
+    {
+      title: "資訊即時更新不中斷",
+      desc: "優惠內容由後台統一管理，可隨時新增、修改或下架活動資訊，確保消費者接收到的內容皆為最新版本，提升優惠使用率與信任感。",
+    },
+    {
+      title: "個人化推薦更精準",
+      desc: "系統可根據使用者歷史行為、偏好類型及常駐地點，自動推薦最相關的優惠資訊，提高點擊率與參與率，強化行銷投放效率。",
+    },
+  ];
+  let currentIdx = 0;
 
-function showLBS(idx) {
-  // 保護
-  if (idx < 0) idx = 0;
-  if (idx >= lbsData.length) idx = lbsData.length - 1;
-  currentIdx = idx;
-  $(".img-item").removeClass("active").eq(idx).addClass("active");
-  $("#lbs-title").text(lbsData[idx].title);
-  $("#lbs-desc").text(lbsData[idx].desc);
-}
+  function showLBS(idx) {
+    // 保護
+    if (idx < 0) idx = 0;
+    if (idx >= lbsData.length) idx = lbsData.length - 1;
+    currentIdx = idx;
+    $(".img-item").removeClass("active").eq(idx).addClass("active");
+    $("#lbs-title").text(lbsData[idx].title);
+    $("#lbs-desc").text(lbsData[idx].desc);
+  }
 
-$(function () {
-  // 點圖片
+  // 點圖片或按Enter
   $(".img-item").on("click keydown", function (e) {
     if (e.type === "click" || e.key === "Enter" || e.keyCode === 13) {
       const idx = parseInt($(this).data("index"));
@@ -138,6 +138,7 @@ $(function () {
   // 預設載入
   showLBS(0);
 });
+
 // 首頁08 - 結束
 
 
