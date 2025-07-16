@@ -243,26 +243,26 @@ $(document).ready(function () {
     {
       title: "精準媒合行銷需求",
       desc: "依據品牌屬性與受眾輪廓，推薦合適的異業合作對象，節省尋找成本。",
-      mainImg: "img/0401.png",
-      smallImg: "img/0402.png"
+      mainImg: "../img/0401.png",
+      smallImg: "../img/0402.png"
     },
     {
       title: "多元通路資源整合",
       desc: "串聯線上/線下多元通路，擴大推廣能見度。",
-      mainImg: "img/0403.png",
-      smallImg: "img/0404.png"
+      mainImg: "../img/0403.png",
+      smallImg: "../img/0404.png"
     },
     {
       title: "即時數據追蹤",
       desc: "分析推廣成效，提供即時數據報告，優化行銷決策。",
-      mainImg: "img/0401.png",
-      smallImg: "img/0402.png"
+      mainImg: "../img/0401.png",
+      smallImg: "../img/0402.png"
     },
     {
       title: "靈活專案執行",
       desc: "彈性調整合作內容，因應多變市場需求。",
-      mainImg: "img/0403.png",
-      smallImg: "img/0404.png"
+      mainImg: "../img/0403.png",
+      smallImg: "../img/0404.png"
     }
   ];
 
@@ -351,9 +351,9 @@ $(document).ready(function () {
         "由專業團隊量身打造影片腳本，確保故事內容貼近品牌調性與受眾期待。",
         "從品牌理念、產品亮點到活動資訊，都能透過精準腳本轉化為具吸引力的影像內容。"
       ],
-      icon: "img/icon01.svg",
-      mainImg: "img/0501.png",
-      smallImg: "img/0502.png"
+      icon: "../img/icon01.svg",
+      mainImg: "../img/0501.png",
+      smallImg: "../img/0502.png"
     },
     {
       title: "專業影像製作團隊",
@@ -361,9 +361,9 @@ $(document).ready(function () {
         "內建導演、攝影師、美術與後製剪輯等專業人員，一站式整合拍攝資源。",
         "支援實景拍攝、動畫製作與創意視覺呈現，提升影片品質與品牌專業度。"
       ],
-      icon: "img/icon02.svg",
-      mainImg: "img/0503.png",
-      smallImg: "img/0504.png"
+      icon: "../img/icon02.svg",
+      mainImg: "../img/0503.png",
+      smallImg: "../img/0504.png"
     },
     {
       title: "跨平台投放應用",
@@ -371,9 +371,9 @@ $(document).ready(function () {
         "影片可用多種比特例格式，無論是Facebook、Instagram、YouTube或LINE都能輕鬆上稿。",
         "適用於品牌官網、活動現場、電視螢幕多元載體，提升內容曝光頻率與延伸效益。"
       ],
-      icon: "img/icon03.svg",
-      mainImg: "img/0501.png",
-      smallImg: "img/0502.png"
+      icon: "../img/icon03.svg",
+      mainImg: "../img/0501.png",
+      smallImg: "../img/0502.png"
     },
     {
       title: "成效追蹤優化內容",
@@ -381,9 +381,9 @@ $(document).ready(function () {
         "提供影片播映數據、點擊率、觀看秒數等數據分析，協助評估行銷成效。",
         "透過數據進行為調整，優化腳本、剪輯與投放策略，持續提升轉換與用戶黏著度。"
       ],
-      icon: "img/icon04.svg",
-      mainImg: "img/0503.png",
-      smallImg: "img/0504.png"
+      icon: "../img/icon04.svg",
+      mainImg: "../img/0503.png",
+      smallImg: "../img/0504.png"
     }
   ];
 
