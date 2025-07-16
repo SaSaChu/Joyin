@@ -1,7 +1,7 @@
 @use "sass:math";
-@import "_/_Lib";
+@import "../_/_Lib";
 @import "Lalilo";
-@import "_/Bootstrap";
+@import "../_/Bootstrap";
 
 // 變數定義
 $maincolor: #f7f3ed; // 淺米色
